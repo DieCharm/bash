@@ -7,7 +7,7 @@ pwd
 whoami
 mdr=`pwd`
 echo "ssss $mdr"
-a=6
-b=9
+read a
+read b
 c=$(($a + $b))
 echo "$c"
