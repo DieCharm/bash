@@ -1,13 +1,9 @@
 #!bin/bash
-echo "smth"
-ls
-str="bvbvb"
-echo "$str"
-pwd
-whoami
-mdr=`pwd`
-echo "ssss $mdr"
-read a
-read b
-c=$(($a + $b))
-echo "$c"
+
+exec 0< inp.txt
+count=1
+while read line
+do
+echo "Folder #$count: $line"
+count=$((count+1))
+done
